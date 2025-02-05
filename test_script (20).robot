@@ -14,7 +14,7 @@ New Tab test
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
     Call Method    ${options}    add_argument    --disable-gpu
-    Open Browser    about:blank    ${BROWSER}    options=${options}
+    Open Browser    https://guru99.com    ${BROWSER}    options=${options}
     Wait Until Element Is Visible    xpath=//td[@id="gs_tti50"]    timeout=5
     Click Element    xpath=//td[@id="gs_tti50"]
 Input Text    name=q   //input[@name="search"]    Wait Until Element Is Visible    xpath=//input[@name="search"]    timeout=5
