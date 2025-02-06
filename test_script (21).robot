@@ -14,19 +14,9 @@ New Tab test
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
     Call Method    ${options}    add_argument    --disable-gpu
-<<<<<<< HEAD
     Open Browser    about:blank    ${BROWSER}    options=${options}
     Wait Until Element Is Visible    xpath=//h3[@class="LC20lb    timeout=5
     Click Element    xpath=//h3[@class="LC20lb
+    Wait Until Element Is Visible    xpath=//svg    timeout=5
+    Click Element    xpath=//svg
     Close Browser
-=======
-    Open Browser    https://guru99.com    ${BROWSER}    options=${options}
-    Wait Until Element Is Visible    xpath=//td[@id="gs_tti50"]    timeout=5
-    Click Element    xpath=//td[@id="gs_tti50"]
-  Input Text    name=q   //input[@name="search"]    
-#Wait Until Element Is Visible    xpath=//input[@name="search"]    timeout=5
-  # Input Text    //input[@name="search"]    testing
-  #   Wait Until Element Is Visible    xpath=//button[@class="gsc-search-button    timeout=5
-  #   Click Element    xpath=//button[@class="gsc-search-button
-  #   Close Browser
->>>>>>> branch 'master' of https://github.com/ramesh-mani-kala/robotcoder.git
